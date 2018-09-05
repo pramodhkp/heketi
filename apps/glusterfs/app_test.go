@@ -51,8 +51,8 @@ func TestAppAdvsettings(t *testing.T) {
 	tests.Assert(t, app.conf.Executor == "mock")
 	tests.Assert(t, app.conf.DBfile == dbfile)
 	tests.Assert(t, BrickMaxNum == 33)
-	tests.Assert(t, BrickMaxSize == 1*TB)
-	tests.Assert(t, BrickMinSize == 4*GB)
+	tests.Assert(t, BrickMaxSize == 1*KB)
+	tests.Assert(t, BrickMinSize == 4*KB)
 }
 
 func TestAppLogLevel(t *testing.T) {

@@ -27,8 +27,8 @@ type GlusterFSConfig struct {
 	Loglevel   string              `json:"loglevel"`
 
 	// advanced settings
-	BrickMaxSize    int    `json:"brick_max_size_gb"`
-	BrickMinSize    int    `json:"brick_min_size_gb"`
+	BrickMaxSize    int    `json:"brick_max_size_bytes"`
+	BrickMinSize    int    `json:"brick_min_size_bytes"`
 	BrickMaxNum     int    `json:"max_bricks_per_volume"`
 	AverageFileSize uint64 `json:"average_file_size_kb"`
 
